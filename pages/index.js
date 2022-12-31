@@ -19,7 +19,7 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps(context) {
-  const {events_categories} = await import("/data/data.json")
+  const {events_categories} = await import("../data/data.json")
   return {
     props: {
       "data": events_categories
